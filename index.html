@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>JC Barbearia</title>
+    <link rel="icon" href="./src/imagens/penteado.png" type="image/x-icon">
+
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <!-- Cabeçalho e Navegação -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./src/imagens/iconedomenu.png" alt="Logo">
+                <span>Jhon Cortes</span>
+            </div>
+            <ul class="menu-horizontal">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#midia">Mídias</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <div class="interface">
+        <section id="home" class="page1">
+            <main class="plano_fundo">
+                <div class="wallpaper">
+                    <div class="container">
+                        <!-- Apresentação -->
+                        <div class="name_apres">
+                            <h1 class="text_one">Elegância em cada corte!</h1>
+                        </div>
+
+                        <!-- Informações -->
+                        <div class="texto_apresentacao">
+                            <p></p>
+                            <a href="https://chat.inbarberapp.com/?id=6ffe79fb-d8d7-4576-aa85-2efde7b36ce5">
+                                <button class="btn-agendar">Agendar um horário</button>
+                            </a>
+                        </div>
+                        
+                        <!-- Logotipo -->
+                        <div class="logo-container"></div>
+                    </div>
+                </div>
+            </main>
+        </section>
+
+        <section id="services" class="page2"> 
+            <iframe src="./serviços.html"style="width: 100%; height: 100vh; border: none;"></iframe>
+        </section>
+
+        <section id="midia" class="page3">
+            <iframe src="./carrousel.html"style="width: 100%; height: 100vh; border: none;"></iframe> 
+        </section>
+        
+        <section id="contact" class="page4">
+            <h1>Página 4</h1>
+        </section>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 JC Barbearia. Todos os direitos reservados.</p>
+        <p>
+            <a href="#home">Início</a> |
+            <a href="#services">Serviços</a> |
+            <a href="#midia">Midía</a> |
+            <a href="#contact">Contato</a>
+        </p>
+        <p>📍 Avenida Antônio de Almeida 1012, Retiro, Volta Redonda, RJ, 27275-040, Brasil</p>
+        <p>📞 (24) 99321-4644</p>
+    </footer>
+
+    <!-- JavaScript para scroll suave -->
+    <script src="./src/js/script_scroll.js"></script>
+    <script src="./src/js/script_menu.js"></script>
+
+</body>
+</html>

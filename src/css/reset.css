@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
+    padding-right: 0;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Configurações gerais */
+
+.interface {  
+    height: 100vh; 
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory; 
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+.interface::-webkit-scrollbar {
+    display: none;
+}

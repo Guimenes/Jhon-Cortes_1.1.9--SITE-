@@ -1,0 +1,73 @@
+/* Estilos para o menu hamburguer */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .menu-horizontal {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .menu-horizontal.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-horizontal.show li {
+        margin: 10px 0;
+    }
+}
+
+/* Hover e animação */
+.menu-horizontal a:hover {
+    color: #FFD700;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #FFD700;
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+    background-color: #FFD700;
+}
+
+
+/*Resposivo view pagina serviços*/
+
+.serviços.card-container{
+
+    display: flex;
+    justify-content: flex-start;
+    
+
+}
